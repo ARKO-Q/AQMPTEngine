@@ -91,8 +91,6 @@ All required packages are listed in `packages.txt`.
 
 ## Usage Example
 
-### Portfolio Summary
-
 ### Setup and Asset Selection
 The user is prompted to enter a number of desired assets, random weight simulations, and the ticker for each asset to be included in the portfolios.
 
