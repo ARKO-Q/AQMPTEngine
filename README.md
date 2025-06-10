@@ -51,7 +51,7 @@ python3 --version
 #### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/modern-portfolio-theory-engine.git
+git clone https://github.com/ARKO-Q/AQMPTEngine.git
 ```
 
 #### 2. Create a Virtual Environment (Recommended)
