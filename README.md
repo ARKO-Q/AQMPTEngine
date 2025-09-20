@@ -94,17 +94,17 @@ All required packages are listed in `/tools/packages.txt`.
 ### Setup and Asset Selection
 The user is prompted to enter a number of desired assets, random weight simulations, and the ticker for each asset to be included in the portfolios.
 
-![Efficient Frontier Curve](Examples/Screenshot(1).jpg)
+![Efficient Frontier Curve](assets/Screenshot(1).jpg)
 
 ### Data Collection and Summary
 The program automatically pulls historical data from Yahoo Finance for the selected assets, making sure to only start from the most recent common date shared acrooss the basket. It is important to only use instruments listed in Yahoo Finance and enter the tickers exactly as they appear in the site. Otherwise, the engine will not work properly. The three main portfolios, maximum Sharpe, maximum mean return, and minimum volatility will be displayed in the console with their respective performance metrics and weights.
 
-![Efficient Frontier Curve](Examples/Screenshot(2).jpg)
+![Efficient Frontier Curve](assets/Screenshot(2).jpg)
 
 ### Efficient Frontier Visualization
 Finally, a separate window graphs the portfolios efficient frontier curve, detailing the entire range of simulations and highlighting the most relevant.
 
-![Efficient Frontier Curve](Examples/Graph.jpg)
+![Efficient Frontier Curve](assets/Graph.jpg)
 
 ---
 
