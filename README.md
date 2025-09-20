@@ -85,7 +85,7 @@ pip install -r packages.txt
 - `matplotlib`  
 - `yfinance`
 
-All required packages are listed in `packages.txt`.
+All required packages are listed in `/tools/packages.txt`.
 
 ---
 
