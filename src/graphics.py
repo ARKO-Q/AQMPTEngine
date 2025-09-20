@@ -3,6 +3,13 @@ import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 from matplotlib.offsetbox import OffsetImage, AnnotationBbox
 
+def clear_terminal():
+    'clears the terminal'
+    if os.name == 'nt':
+        os.system('cls')
+    else:
+        os.system('clear')
+
 def plot_efficient_frontier(sim_results):
     'Plots the efficient frontier and simulated portfolios using matplotlib'
 
@@ -38,9 +45,9 @@ def plot_efficient_frontier(sim_results):
     plt.scatter(max_sharpe_volatility, max_sharpe_return, marker = '*', color ='red', s=200, edgecolor = 'none', linewidth = 1.5, label = 'Max Sharpe Ratio')
     plt.scatter(min_vol_volatility, min_vol_return, marker = 'D', color = 'orange', s=120, edgecolor ='none', linewidth = 1.5, label = 'Min Volatility')
     plt.scatter(max_return_volatility, max_return, marker = '^', color = 'purple', s=120, edgecolor ='none', linewidth = 1.5, label = 'Max Mean Return')
-    
+
     plt.legend(loc = 'upper left', facecolor = 'black')
-    
+
     plt.title('ARKO Quantum S.R.L - Efficient Frontier Curve', color = 'white')
     plt.xlabel('Annualized Volatility (δ)', color = 'white')
     plt.ylabel('Annualized Mean Return (μ)', color = 'white')

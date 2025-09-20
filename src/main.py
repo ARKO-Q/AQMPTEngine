@@ -1,12 +1,11 @@
-import os
-from dependencies.data import *
-from dependencies.sim import *
-from dependencies.graphics import *
+from data import *
+from sim import *
+from graphics import *
 
 assets = []
 correct_selection = False
 while correct_selection == False:
-    os.system('cls')
+    clear_terminal()
     print('ARKO Quantum S.R.L. Modern Portfolio Theory Engine                https://arkoquantum.com')
     print('──────────────────────────────────────────────────────────────────────────────────────────┤')
     try:
@@ -21,7 +20,7 @@ while correct_selection == False:
     except:
         input('Unkown Error: Revise input values, review documentation. \nPress ENTER to restart: ')
         continue
-    
+
     print('──────────────────────────────────────────────────────────────────────────────────────────┤')
     confirmation = input('Correct Selection? (Y/N): ')
     if confirmation == 'y' or confirmation == 'Y':
